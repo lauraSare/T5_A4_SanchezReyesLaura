@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Conversor_Temperaturas</string>
+    <string name="Lbl_titulo">CONVERSOR</string>
+    <string name="btn_Decimal">Decimal </string>
+    <string name="btn_Binario">Binario </string>
+    <string name="btn_Octal">Octal </string>
+    <string name="btn_Hexadecimal">Hexadecimal</string>
+    <string name="lbl_ingreso">Ingresa número:  </string>
+</resources>

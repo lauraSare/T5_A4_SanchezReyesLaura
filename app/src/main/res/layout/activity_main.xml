@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/CajaOctal1"
+        android:layout_width="256dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/cbOctal1"
+        app:layout_constraintTop_toBottomOf="@+id/CajaBinario1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="383dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="31dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo">
+
+        <RadioButton
+            android:id="@+id/btn_Decimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:onClick="btDecimal"
+            android:outlineAmbientShadowColor="#EFE3E3"
+            android:outlineSpotShadowColor="#E64848"
+            android:text="@string/btn_Decimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#F3F1F1"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/btn_Binario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnBinario"
+            android:text="@string/btn_Binario"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/btn_Octal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btOcta"
+            android:text="@string/btn_Octal"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/btn_Hexadecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btHexa"
+            android:text="@string/btn_Hexadecimal"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/Caja_texto"
+        android:layout_width="368dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/cbBinario1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="69dp"
+        android:onClick="checkSelecy"
+        android:text="@string/btn_Binario"
+        android:textColor="#F7FAF3"
+        android:textColorHint="#F7FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Caja_texto" />
+
+    <CheckBox
+        android:id="@+id/cbOctal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:onClick="checkSelecy"
+        android:text="@string/btn_Octal"
+        android:textColor="#F3F6F0"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbBinario1" />
+
+    <CheckBox
+        android:id="@+id/cbHexa1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:onClick="checkSelecy"
+        android:text="@string/btn_Hexadecimal"
+        android:textColor="#F4F6F1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbOctal1" />
+
+    <EditText
+        android:id="@+id/CajaBinario1"
+        android:layout_width="270dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="67dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toEndOf="@+id/cbBinario1"
+        app:layout_constraintTop_toBottomOf="@+id/Caja_texto" />
+
+    <EditText
+        android:id="@+id/CajaHexa1"
+        android:layout_width="248dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@+id/cbHexa1"
+        app:layout_constraintTop_toBottomOf="@+id/CajaOctal1" />
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/Lbl_titulo"
+        android:textColor="#FAF8F6"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="195dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:text="@string/lbl_ingreso"
+        android:textColor="#DBE3E5"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
